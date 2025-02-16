@@ -41,15 +41,15 @@ export default function Home() {
             </Text>
             <Text style={styles.featuresLabel}>Features</Text>
             <View style={styles.featuresContainer}>
-              <View style={styles.featureBox}>
+              <TouchableOpacity onPress={() => router.push("/FinAI")} style={styles.featureBox}>
                 <Text style={styles.featureText}>AI Financial Assistant</Text>
-              </View>
-              <View style={styles.featureBox}>
+              </TouchableOpacity>
+              <TouchableOpacity onPress={() => router.push("/profile")} style={styles.featureBox}>
                 <Text style={styles.featureText}>Tax Form Breakdown</Text>
-              </View>
-              <View style={styles.featureBox}>
+              </TouchableOpacity>
+              <TouchableOpacity onPress={() => router.push("/upload")} style={styles.featureBox}>
                 <Text style={styles.featureText}>Secure Document Upload</Text>
-              </View>
+              </TouchableOpacity>
             </View>
           </View>
         </View>
